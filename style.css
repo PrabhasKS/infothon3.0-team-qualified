@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    font-size: 95px;
+    color: #fff;
+    margin-bottom: 50px;
+}
+
+.content a{
+    font-size: 23px;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    padding: 15px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.content a:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.background-clip{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (min-aspect-ratio:16/9) {
+    .background-clip{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio:16/9) {
+    .background-clip{
+        width: auto;
+        height: 100%;
+    }
+}
+.navbar {
+    position: fixed; /* Makes the navbar fixed to the top */
+    top: 0; /* Positions it at the top of the viewport */
+    left: 0; /* Positions it at the left of the viewport */
+    width: 100%; /* Stretches the navbar across the entire width */
+    display: flex; /* Arranges navigation links horizontally */
+    justify-content: space-between; /* Distributes links with space in between */
+    padding: 1rem 2rem; /* Adds some padding for aesthetics */
+    background-color: transparent; /* Makes the background transparent */
+  }
+  
+  .navbar a {
+    color: white; /* Sets the text color for navigation links */
+    text-decoration: none; /* Removes underline from links */
+    padding: 0.5rem 1rem; /* Adds padding for links */
+    transition: all 0.2s ease-in-out; /* Adds smooth hover effect */
+    font-size: 25px;
+    
+  }
+  
+  .navbar a:hover {
+    background-color: rgba(0, 0, 0, 0.2); /* Adds a subtle hover effect */
+  }
+  .page1{
+    width:100%;
+    height:100vh;
+  }
+ /* Style the page container */
+/* Style the page container */
+.page1 {
+    display: flex;
+    height: 100vh; /* Set the height to 100% of the viewport */
+  }
+  
+  /* Style the container within the page */
+  .container {
+    display: flex;
+    flex-direction: column; /* Stacks images and text area vertically */
+    align-items: center; /* Aligns content horizontally */
+    padding: 2rem;
+  }
+  
+  /* Style the image container */
+  .image-container {
+    display: flex;
+    justify-content: space-between; /* Distributes images evenly */
+    width: 100%; /* Ensures images fill the available width */
+    margin-bottom: 1rem; /* Adds space below the images */
+  }
+  
+  /* Style the image item (container for image & caption) */
+  .image-item {
+    text-align: center; /* Centers text below image */
+    margin: 0.5rem; /* Adds space between image items */
+  }
+  
+  /* Style the image */
+  .image {
+    width: 32%; /* Adjust image width as needed (33% for equal width) */
+    height: auto;
+    object-fit: cover; /* Ensures image fills container proportionally */
+    transition: transform 0.3s ease-in-out; /* Transition for hover effect */
+    border-radius: 2%;
+  }
+  
+  /* Style the image on hover */
+  .image:hover {
+    transform: scale(1.1); /* Slight scale on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow on hover */
+  }
+  
+  /* Style the image caption */
+  .image-item p {
+    margin-top: 0.5rem; /* Adds space between image and caption */
+  }
+  
+  /* Style the text area */
+  .text-area {
+    width: 100%; /* Adjust text area width as needed */
+    text-align: left; /* Centers text horizontally */
+  }
+  
+  /* Style the heading */
+  h1 {
+    margin-bottom: 1rem; /* Adds space below the heading */
+    font-family: Poppins;
+    font-size: 500%;
+    color:#fff
+  }
+  
+  
+  
